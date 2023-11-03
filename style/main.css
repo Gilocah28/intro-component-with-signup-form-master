@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+main, body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form___container form .form___btn, .form___container form .form___group .form___input {
+  width: 100%;
+  height: 3.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  background: url(/images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+  color: white;
+  width: 100%;
+  height: 100vh;
+}
+@media screen and (min-width: 768px) {
+  body {
+    background: url(/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+main {
+  flex-direction: column;
+  text-align: center;
+  max-width: 1080px;
+  width: 100%;
+  margin: auto 0;
+  padding: 1.5rem 0;
+}
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    width: 80%;
+  }
+}
+
+.title___contianer {
+  flex: 1;
+  padding: 0 1rem;
+}
+.title___contianer .title___h1 {
+  line-height: 2.5rem;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 768px) {
+  .title___contianer .title___h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+.title___contianer .title___p {
+  line-height: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .title___contianer {
+    text-align: left;
+  }
+}
+
+.form___container {
+  padding: 0 1.5rem;
+  flex: 1;
+  margin-top: 4rem;
+}
+.form___container .form___p {
+  width: 100%;
+  height: 80px;
+  padding: 1rem 5rem;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  box-shadow: 1px 7px 3px -2px rgba(0, 0, 0, 0.39);
+  margin-bottom: 1rem;
+}
+.form___container .form___p .form___span {
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .form___container .form___p {
+    height: 50px;
+    padding: 1rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+.form___container form {
+  background-color: white;
+  color: black;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 1px 7px 3px -2px rgba(0, 0, 0, 0.39);
+}
+.form___container form .form___group {
+  position: relative;
+}
+.form___container form .form___group .form___input {
+  padding-left: 1rem;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 1rem;
+}
+.form___container form .form___group .form___input::-moz-placeholder {
+  font-weight: 500;
+}
+.form___container form .form___group .form___input::placeholder {
+  font-weight: 500;
+}
+.form___container form .form___group .form___input .form___input .active {
+  margin-bottom: 0;
+  border: 1px solid hsl(0, 100%, 74%);
+}
+.form___container form .form___group .form___error {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+}
+.form___container form .form___group .form___p_error {
+  margin-bottom: 0.5rem;
+  text-align: right;
+  color: hsl(0, 100%, 74%);
+  font-size: 0.8rem;
+  font-style: italic;
+  display: none;
+}
+.form___container form .form___group .active {
+  display: block;
+}
+.form___container form .form___btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 1rem;
+}
+.form___container form .form___btn:hover {
+  transition: all 0.2s ease-in-out;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.form___container form .form___p_term {
+  font-size: 0.8rem;
+  width: 80%;
+  margin: 0 auto;
+  color: hsl(246, 25%, 77%);
+  font-weight: 400;
+}
+.form___container form .form___p_term .form__p_term_span {
+  font-weight: 600;
+  color: hsl(0, 100%, 74%);
+}/*# sourceMappingURL=main.css.map */

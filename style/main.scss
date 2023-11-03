@@ -1,0 +1,188 @@
+@import 'variable';
+@import 'mediaQueries';
+
+%displayFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%formSizes{
+    width: 100%;
+    height: 3.5rem;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    font-size: 1rem;
+    background: url(/images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $Red;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    @extend %displayFlex;
+    @include laptop{
+        background: url(/images/bg-intro-desktop.png);
+        background-color: $Red;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+}
+
+main{
+    @extend %displayFlex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 1080px;
+    width: 100%;
+    margin: auto 0;
+    padding: 1.5rem 0;
+
+    @include laptop{
+        flex-direction: row;
+        width: 80%;
+    }
+}
+
+.title___contianer{
+    flex: 1;
+    padding: 0 1rem;
+
+    .title___h1{
+        line-height: 2.5rem;
+        letter-spacing: 2px;
+        @include laptop{
+            margin-bottom: 1rem;
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+    }
+    .title___p{
+        line-height: 2rem;
+    }
+    @include laptop{
+        text-align: left;
+    }
+}
+
+.form___container{
+    padding: 0 1.5rem;
+    flex: 1;
+    margin-top: 4rem;
+
+    .form___p{
+        width: 100%;
+        height: 80px;
+        padding: 1rem 5rem;
+        background-color: $Blue;
+        border-radius: 10px;
+        box-shadow: $shadow;
+        margin-bottom: 1rem;
+
+        .form___span{
+            font-weight: 600;
+        }
+
+        @include laptop{
+            height: 50px;
+            padding: 1rem .5rem;
+            font-size: .8rem;
+        }
+
+    }
+
+    form{
+        background-color: white;
+        color: black;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: $shadow;
+
+
+        .form___group{
+            position: relative;
+            .form___input{
+                @extend %formSizes;
+                padding-left: 1rem;
+                border: 1px solid $GrayishBlue;
+                border-radius: 5px;
+                outline: none;
+                margin-bottom: 1rem;
+
+                &::placeholder{
+                    font-weight: 500;
+                }
+
+                .form___input .active {
+                    margin-bottom: 0;
+                    border: 1px solid $Red;
+                }
+            }
+            
+            .form___error{
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                display: none;
+            }
+
+            .form___p_error{
+                margin-bottom: .5rem;
+                text-align: right;
+                color: $Red;
+                font-size: .8rem;
+                font-style: italic;
+                display: none;
+            }
+
+            .active{
+                display: block;
+            }
+        }
+
+        .form___btn{
+            @extend %formSizes;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+            background-color: $Green;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            margin-bottom: 1rem;
+            &:hover{
+                transition: all .20s ease-in-out;
+                opacity: 0.7;
+                cursor: pointer;
+            }
+        }
+        .form___p_term{
+            font-size: .8rem;
+            width: 80%;
+            margin: 0 auto;
+            color: $GrayishBlue;
+            font-weight: 400;
+            
+            .form__p_term_span{
+                font-weight: 600;
+                color: $Red;
+            }
+        }
+    }
+}
+
+
+
+
+

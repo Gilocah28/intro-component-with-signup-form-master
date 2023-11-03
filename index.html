@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style/main.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+
+  <main>
+    <div class="title___contianer">
+      <h1 class="title___h1">
+        Learn to code by watching others
+      </h1>
+      <p class="title___p">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. 
+      </p>
+    </div>
+
+    <div class="form___container">
+      <p class="form___p">
+        <span class="form___span">
+          Try it free 7 days
+        </span>
+        then $20/mo. thereafter
+      </p>
+
+      <form action="#">
+        <!-- firstname section -->
+        <div class="form___group">
+          <input class="form___input" type="text" placeholder="First Name" id="fname">
+          <img src="/images/icon-error.svg" alt="error" class="form___error">
+          <p class="form___p_error">
+            First Name connot be empty
+          </p>
+        </div>
+
+        <!-- lastname Section -->
+        <div class="form___group">
+          <input class="form___input" type="text" placeholder="Last Name" id="lname">
+          <img src="/images/icon-error.svg" alt="error" class="form___error">
+          <p class="form___p_error">
+            Last Name connot be empty
+          </p>
+        </div>
+
+        <!-- Email section -->
+        <div class="form___group">
+          <input class="form___input" type="email" placeholder="Emial" id="email">
+          <img src="/images/icon-error.svg" alt="error" class="form___error">
+          <p class="form___p_error">
+            Looks like this is not an email
+          </p>
+        </div>
+
+        <!-- Password Section-->
+        <div class="form___group">
+          <input class="form___input" type="password" placeholder="Password" id="password">
+          <img src="/images/icon-error.svg" alt="error" class="form___error">
+          <p class="form___p_error">
+            Password cannot be empty
+          </p>
+        </div>
+
+        <button class="form___btn">Claim your free trial</button>
+        <p class="form___p_term">
+          By clicking the button, you are agreeing to our
+          <span class="form__p_term_span">
+            Terms and Services
+          </span>
+        </p>
+
+      </form>
+    </div>
+  </main>
+
+
+
+
+
+
+  <script src="apps.js"></script>
+</body>
+</html>
